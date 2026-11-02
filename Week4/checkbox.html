@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Club - Event & Registration</title>
+</head>
+<body>
+
+    <h1>Tech Club Registration</h1>
+
+    <!-- Registration Form -->
+    <form action="#" method="POST">
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div>
+            <label for="reg-date">Registration Date:</label>
+            <input type="date" id="reg-date" name="reg_date">
+        </div>
+
+        <div>
+            <label>Membership Type:</label>
+            <input type="radio" id="student" name="member_type" value="student" checked>
+            <label for="student">Student</label>
+            <input type="radio" id="pro" name="member_type" value="professional">
+            <label for="pro">Professional</label>
+        </div>
+
+        <div>
+            <label>Interests:</label>
+            <input type="checkbox" id="webdev" name="interests" value="webdev">
+            <label for="webdev">Web Development</label>
+            <input type="checkbox" id="ai" name="interests" value="ai">
+            <label for="ai">AI & Machine Learning</label>
+        </div>
+
+        <div>
+            <label for="club-choice">Preferred Club Chapter:</label>
+            <select id="club-choice" name="club_chapter">
+                <option value="downtown">Downtown Campus</option>
+                <option value="north">North Campus</option>
+                <option value="online">Online Chapter</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message">Why do you want to join?</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit Registration</button>
+        </div>
+    </form>
+
+</body>
+</html>
